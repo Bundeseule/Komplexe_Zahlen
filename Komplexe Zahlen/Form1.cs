@@ -35,6 +35,13 @@ namespace Komplexe_Zahlen
             cVar2.re = double.Parse(tbRe2.Text);
             cVar2.im = double.Parse(tbIm2.Text);
 
+            cVar1.Addition(cVar2.re, cVar2.im, out cErg.re, out cErg.im);
+
+            lErg.Text = String.Format("re= {0}    im={1}", cErg.re, cErg.im);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -42,10 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.labelRe = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.labelIm = new System.Windows.Forms.Label();
+            this.labelErgebnis = new System.Windows.Forms.Label();
+            this.lErg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bSchliessen
@@ -182,55 +180,33 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "=";
             // 
-            // label6
+            // labelErgebnis
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1012, 171);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 31);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "re1";
+            this.labelErgebnis.AutoSize = true;
+            this.labelErgebnis.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErgebnis.Location = new System.Drawing.Point(1012, 174);
+            this.labelErgebnis.Name = "labelErgebnis";
+            this.labelErgebnis.Size = new System.Drawing.Size(0, 31);
+            this.labelErgebnis.TabIndex = 14;
             // 
-            // labelRe
+            // lErg
             // 
-            this.labelRe.AutoSize = true;
-            this.labelRe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRe.Location = new System.Drawing.Point(1071, 171);
-            this.labelRe.Name = "labelRe";
-            this.labelRe.Size = new System.Drawing.Size(53, 31);
-            this.labelRe.TabIndex = 15;
-            this.labelRe.Text = "re1";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1130, 171);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 31);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "re1";
-            // 
-            // labelIm
-            // 
-            this.labelIm.AutoSize = true;
-            this.labelIm.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIm.Location = new System.Drawing.Point(1189, 171);
-            this.labelIm.Name = "labelIm";
-            this.labelIm.Size = new System.Drawing.Size(53, 31);
-            this.labelIm.TabIndex = 17;
-            this.labelIm.Text = "re1";
+            this.lErg.AutoSize = true;
+            this.lErg.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lErg.Location = new System.Drawing.Point(1012, 174);
+            this.lErg.Name = "lErg";
+            this.lErg.Size = new System.Drawing.Size(86, 31);
+            this.lErg.TabIndex = 15;
+            this.lErg.Text = "label6";
+            this.lErg.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1239, 366);
-            this.Controls.Add(this.labelIm);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.labelRe);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lErg);
+            this.Controls.Add(this.labelErgebnis);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -268,10 +244,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label labelRe;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label labelIm;
+        private System.Windows.Forms.Label labelErgebnis;
+        private System.Windows.Forms.Label lErg;
     }
 }
 
