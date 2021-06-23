@@ -24,6 +24,12 @@ namespace Komplexe_Zahlen
     }
     public class ComplexNumbers
     {
+        double re, im;
 
+        ComplexNumbers()
+        {
+            re = 0.0;
+            im = 0.0;
+        }
     }
 }
