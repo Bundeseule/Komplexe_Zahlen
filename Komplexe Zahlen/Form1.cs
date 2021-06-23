@@ -32,6 +32,10 @@ namespace Komplexe_Zahlen
             cVar1.re = double.Parse(tbRe1.Text);
             cVar1.im = double.Parse(tbIm1.Text);
 
+            cVar2.re = double.Parse(tbRe2.Text);
+            cVar2.im = double.Parse(tbIm2.Text);
+
+
         }
     }
     public class ComplexNumbers
