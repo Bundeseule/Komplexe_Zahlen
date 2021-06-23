@@ -22,4 +22,8 @@ namespace Komplexe_Zahlen
             this.Close();
         }
     }
+    public class ComplexNumbers
+    {
+
+    }
 }
