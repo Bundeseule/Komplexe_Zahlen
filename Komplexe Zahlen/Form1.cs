@@ -16,5 +16,10 @@ namespace Komplexe_Zahlen
         {
             InitializeComponent();
         }
+
+        private void bSchliessen_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
