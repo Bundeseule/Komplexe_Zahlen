@@ -77,6 +77,7 @@
             this.bMinus.TabIndex = 2;
             this.bMinus.Text = "-";
             this.bMinus.UseVisualStyleBackColor = true;
+            this.bMinus.Click += new System.EventHandler(this.bMinus_Click);
             // 
             // bMultiplikation
             // 
