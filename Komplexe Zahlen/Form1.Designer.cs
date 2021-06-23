@@ -68,6 +68,7 @@
             this.bPlus.TabIndex = 1;
             this.bPlus.Text = "+";
             this.bPlus.UseVisualStyleBackColor = true;
+            this.bPlus.Click += new System.EventHandler(this.bPlus_Click);
             // 
             // bMinus
             // 

@@ -21,15 +21,33 @@ namespace Komplexe_Zahlen
         {
             this.Close();
         }
+
+        private void bPlus_Click(object sender, EventArgs e)
+        {
+            ComplexNumbers cVar1, cVar2, cErg;
+            cVar1 = new ComplexNumbers();
+            cVar2 = new ComplexNumbers();
+            cErg = new ComplexNumbers();
+
+            cVar1.re = double.Parse(tbRe1.Text);
+            cVar1.im = double.Parse(tbIm1.Text);
+
+        }
     }
     public class ComplexNumbers
     {
-        double re, im;
+        public double re, im;
 
-        ComplexNumbers()
+        public ComplexNumbers()
         {
             re = 0.0;
             im = 0.0;
+        }
+
+        public void Addition(double re1, double im1, out double reErg, out double imErg)
+        {
+            reErg = re + re1;
+            imErg = im + im1;
         }
     }
 }
