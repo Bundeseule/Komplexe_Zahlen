@@ -60,5 +60,30 @@ namespace Komplexe_Zahlen
             reErg = re + re1;
             imErg = im + im1;
         }
+
+        public void Subtraktion(double re1, double im1, out double reErg, out double imErg)
+        {
+            reErg = re - re1;
+            imErg = im - im1;
+        }
+
+        public void ToPolar(out double r, out double phi)
+        {
+            r = Math.Sqrt(re * re + im * im);
+            phi = Math.Atan(im / re);
+            // hier steht im script Benutze Math.Atan2, aber das möchte zwei Argumente
+        }
+
+        public void Mulitplikation(double re1, double im1, out double reErg, out double imErg)
+        {
+            reErg = re * re1 - im * im1;
+            imErg = re * im1 + re1 * im;
+        }
+
+        public void Division(double re1, double im1, out double reErg, out double imErg)
+        {
+            reErg = (re * re1 + im1 * im) / (re1 * re1 + im1 * im1);
+            imErg = (re1 * im - re * im1) / (re1 * re1 + im1 * im1);
+        }
     }
 }
