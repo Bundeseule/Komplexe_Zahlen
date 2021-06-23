@@ -88,6 +88,7 @@
             this.bMultiplikation.TabIndex = 3;
             this.bMultiplikation.Text = "*";
             this.bMultiplikation.UseVisualStyleBackColor = true;
+            this.bMultiplikation.Click += new System.EventHandler(this.bMultiplikation_Click);
             // 
             // bDividieren
             // 

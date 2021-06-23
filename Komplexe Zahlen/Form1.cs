@@ -62,6 +62,24 @@ namespace Komplexe_Zahlen
 
             lErg.Text = String.Format("re={0}   im={1}", complexNumbers3.re, complexNumbers3.im);
         }
+
+        private void bMultiplikation_Click(object sender, EventArgs e)
+        {
+            ComplexNumbers complexNumbers1, complexNumbers2, complexNumbers3;
+            complexNumbers1 = new ComplexNumbers();
+            complexNumbers2 = new ComplexNumbers();
+            complexNumbers3 = new ComplexNumbers();
+
+            complexNumbers1.re = double.Parse(tbRe1.Text);
+            complexNumbers1.im = double.Parse(tbIm1.Text);
+
+            complexNumbers2.re = double.Parse(tbRe2.Text);
+            complexNumbers2.im = double.Parse(tbIm2.Text);
+
+            complexNumbers1.Mulitplikation(complexNumbers2.re, complexNumbers2.im, out complexNumbers3.re, out complexNumbers3.im);
+
+            lErg.Text = String.Format("re={0}   im={1}", complexNumbers3.re, complexNumbers3.im);
+        }
     }
     public class ComplexNumbers
     {
