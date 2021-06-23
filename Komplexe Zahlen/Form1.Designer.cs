@@ -99,6 +99,7 @@
             this.bDividieren.TabIndex = 4;
             this.bDividieren.Text = "/";
             this.bDividieren.UseVisualStyleBackColor = true;
+            this.bDividieren.Click += new System.EventHandler(this.bDividieren_Click);
             // 
             // tbRe1
             // 
